@@ -1,0 +1,103 @@
+/* 1. CSS Variables - Your Theme */
+:root {
+  --primary-color: #004e64; /* Deep river blue */
+  --secondary-color: #ffba08; /* Life jacket yellow */
+  --accent1-color: #252422;
+  --accent2-color: #ffffff;
+  --heading-font: "Times New Roman", "Georgia", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* 2. Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding doesn't break your width */
+}
+
+/* 3. Page Layout & Typography */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* 4. Navigation Styling */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* 5. The Hero Section Overlay */
+.hero {
+  position: relative; /* Container for absolute children */
+  margin: 0; /* Remove default margin to let it hit the edges of the 840px limit */
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(37, 36, 34, 0.7); /* Dark semi-transparent */
+  color: var(--accent2-color);
+  opacity: 0.8;
+}
+
+.hero article {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  right: 50px;
+  background-color: rgba(255, 255, 255, 0.8); /* Light semi-transparent */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin: 0 0 10px 15px;
+}
+
+/* 6. Footer & Social Media */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+
+footer p {
+  margin: 0;
+}
+
+.socialmedia a {
+  text-decoration: none; /* Removes underlines from icons */
+}
+
+.socialmedia img {
+  width: 32px; /* Critical size for your manual SVG files */
+  height: auto;
+  margin-left: 10px;
+  /* If your SVGs are black and you want them white, uncomment the line below: */
+  /* filter: invert(100%); */
+}
