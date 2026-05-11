@@ -1,0 +1,46 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* W02 Main width limit */
+main {
+    max-width: 840px;
+}
+
+/* Profile Image Styling */
+main img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* W02 Aside Styling */
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Paragraph Reset */
+p {
+    padding: 0;
+}
+
+/* W02 Footer Styling */
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
